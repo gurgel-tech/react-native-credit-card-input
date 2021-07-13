@@ -103,6 +103,7 @@ LiteCreditCardInput does not support `requiresName`, `requiresCVC`, and `require
 |onFocus | PropTypes.func | Receives the name of currently focused field |
 |labels | PropTypes.object | Defaults to <br/>`{ number: "CARD NUMBER", expiry: "EXPIRY", cvc: "CVC/CCV" }` |
 |placeholders | PropTypes.object | Defaults to <br/>`{ number: "1234 5678 1234 5678", expiry: "MM/YY", cvc: "CVC" }` |
+|cardView | PropTypes.object | Defaults to <br/>`{ expiration: "MONTH/YEAR" }` |
 |cardScale | PropTypes.number | Scales the credit-card view.<br/>Defaults to `1`, which translates to `{ width: 300, height: 190 }` |
 |cardFontFamily | PropTypes.string | Font family for the CreditCardView, works best with monospace fonts. Defaults to Courier (iOS) or monospace (android) |
 |cardImageFront | PropTypes.number | Image for the credit-card view `e.g. require("./card.png")` |
@@ -132,6 +133,7 @@ LiteCreditCardInput does not support `requiresName`, `requiresCVC`, and `require
 |expiry | PropTypes.string | Credit card expiry (should be in MM/YY format)|
 |cvc | PropTypes.string | Credit card CVC |
 |placeholder | PropTypes.object | Placeholder texts|
+|cardViewExpiration | PropTypes.object | Expire information in card component |
 |scale | PropTypes.number | Scales the card|
 |fontFamily | PropTypes.string | Defaults to `Courier` and `monospace` in iOS and Android respectively|
 |imageFront | PropTypes.number | Image for the credit-card |
